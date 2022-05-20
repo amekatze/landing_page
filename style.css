@@ -19,15 +19,17 @@ body {
 header,
 footer {
     background: var(--frame);
+    color: var(--second);
 }
 
 header, footer, .info {
-    padding: 0 15vh 10vh;
+    padding: 0 10vh 10vh;
 }
 
 nav {
     display: flex;
-    align-items: center;  
+    align-items: center; 
+    justify-content: center; 
 }
 
 header .logo {
@@ -59,11 +61,14 @@ header ul {
 header .content {
     margin-top: 8vh;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 header .text {
     margin-right: 2vh;
+    max-width: 40vh;
+    padding-bottom: 5vh;
 }
 
 header img {
@@ -84,16 +89,32 @@ button {
     display: flex;
     flex-direction: column;
 }
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5vh 15vh;
+    flex-wrap: wrap;
+    gap: 1vh;
+}
+
+.card {
+    max-width: 20vh;
+}
 .card img {
-    width: 130px;
+    width: 100%;
+    display: inline-block;
     border-radius: 10%;
     border: 3px solid var(--accent);
 }
 
 .quote {
+    text-align: left;
     background: var(--second);
     color: var(--frame);
     padding: 0;
+    padding: 8vh 25vh;
 }
 
 .quote p {
@@ -107,12 +128,27 @@ button {
 }
 
 .calltoaction {
+    text-align: left;
+    align-self: center;
     background: var(--accent);
     color: var(--sharp);
-    max-width: 60vh;
+    width: 80vh;
     border-radius: 5px;
+    margin: 8vh;
+    padding: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
 
 .calltoaction button {
     border: 1px solid var(--sharp);
+    height: 3vh;
+    width: 13vh;
+}
+
+footer {
+    padding: 5vh 0;
+    text-align: center;
 }

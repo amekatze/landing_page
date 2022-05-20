@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,100&display=swap');
+
+:root {
+    --accent: #3882F6;
+    --frame: #1F2937;
+    --sharp: #F9FAF8;
+    --second: #E5E7EB;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 18px;
+    color: var(--frame);
+}
+
+header,
+footer {
+    background: var(--frame);
+}
+
+header, footer, .info {
+    padding: 0 15vh 10vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;  
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--sharp);
+    flex: auto;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 800px;
+    color: var(--sharp);
+    margin-bottom: 0;
+}
+
+header p, a, button {
+    color: var(--second);
+    text-decoration: none;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    list-style-type: none;
+}
+
+header .content {
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: row;
+}
+
+header .text {
+    margin-right: 2vh;
+}
+
+header img {
+    align-self: center;
+    width: 50vh;
+}
+
+button {
+    font-size: 18px;
+    background: var(--accent);
+    border-radius: 7px 7px;
+    box-shadow: none;
+    border: none;
+    padding: 5px 30px;
+}
+.hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.card img {
+    width: 130px;
+    border-radius: 10%;
+    border: 3px solid var(--accent);
+}
+
+.quote {
+    background: var(--second);
+    color: var(--frame);
+    padding: 0;
+}
+
+.quote p {
+    font-style: italic;
+    font-weight: light;
+    font-size: 36px;
+}
+
+.quote h3 {
+    font-weight: 900;
+}
+
+.calltoaction {
+    background: var(--accent);
+    color: var(--sharp);
+    max-width: 60vh;
+    border-radius: 5px;
+}
+
+.calltoaction button {
+    border: 1px solid var(--sharp);
+}
